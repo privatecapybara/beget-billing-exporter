@@ -7,7 +7,7 @@ API_URL = os.getenv('BEGET_API_URL', 'https://api.beget.com/api/user/getAccountI
 LOGIN = os.getenv('BEGET_API_LOGIN')
 PASSWORD = os.getenv('BEGET_API_PASSWORD')
 PORT = int(os.getenv('BEGET_EXPORTER_PORT', 9481))
-SCRAPE_TIME = int(os.getenv('BEGET_EXPORTER_SCRAPE_TIME', 300))
+SCRAPE_TIME = int(os.getenv('BEGET_EXPORTER_SCRAPE_TIME', 1800))
 
 USER_BALANCE = Gauge(
     'beget_user_balance_rub',
